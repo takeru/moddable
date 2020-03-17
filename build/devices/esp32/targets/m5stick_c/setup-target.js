@@ -24,7 +24,7 @@ export default function (done) {
 	});
 
 	//@@ microphone
-
+/*
 	state.accelerometerGyro = new SH200Q;
 
 	//trace( 'The Temp:',state.accelerometerGyro.sampleTemp(),'\n');
@@ -78,7 +78,7 @@ export default function (done) {
 			Timer.clear(state.gyroTimerID);
 		delete state.gyroTimerID;
 	}
-	
+*/	
 	if (config.autorotate && global.Application){
 		state.handleRotation = function (reading) {
 			if (Math.abs(reading.y) > Math.abs(reading.x)) {
@@ -95,7 +95,7 @@ export default function (done) {
 				}
 			}
 		}
-		accelerometer.start(300);
+		//accelerometer.start(300);
 	}
 
 	done();
